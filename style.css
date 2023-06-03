@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+.mscursor-cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
+}
+
+.mscursor-difference {
+  mix-blend-mode: difference;
+}
+
+.mscursor-circle {
+  transform-origin: center;
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+}
+
+.mscursor-border-transform {
+  animation: border-transform 3s linear infinite;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.mscursor-scale {
+  transition: 0.5s ease;
+  transform: scale(1.6);
+}
+
+.mscursor-scale-outline {
+  transform: scale(1.9);
+  background-color: transparent !important;
+}
+
+.mscursor-nocursor {
+  cursor: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  overflow: auto;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--navbar--*/
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: auto;
+  z-index: 10;
+}
+
+.bold {
+  font-size: 25px;
+}
+body ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: auto;
+  border-radius: 20px;
+}
+body ul li a:hover {
+  background: auto;
+  color: rgb(0, 0, 255);
+}
+li {
+  padding: 5px;
+  font-weight: bold;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid auto;
+}
+.nav-link:hover {
+  border-bottom: 3px solid blue;
+  transition: 0.1s;
+}
+
+/*------Home------*/
+
+span {
+  color: blue;
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+}
+
+/*--------About------*/
+
+#about img {
+  width: 28rem;
+  height: 32rem;
+  border-radius: 70px;
+  object-fit: cover;
+}
+
+/*-------Services------*/
+
+.card img {
+  height: 250px;
+}
+.inner {
+  overflow: hidden;
+}
+.card img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+}
+.card shadow {
+  flex: 1 1 30rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.1rem 0.5rem #ffffff;
+  border-top: 0.6rem solid #fdfdfd;
+  border-bottom: 0.6rem solid #fdfdfd;
+}
+/*------Contact------*/
+
+form {
+  padding: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -1px -1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
